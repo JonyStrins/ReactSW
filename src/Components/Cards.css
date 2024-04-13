@@ -1,6 +1,25 @@
+:root {
+    --clr-black: #1c1c1c;
+    --clr-gray: #ececec;
+    --clr-white: #f7f7f7;
+    --clr-red: #dc0a0a;
+    --clr-red2: #da0a2b;
+    --clr-blue: #2b2bff;
+    --clr-yellow: #f0d632;
+    --clr-green: #56ae56;
+}
+
 .card{
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: 1px 1px 5px var(--clr-red);
+    background-color: var(--clr-gray);
+    color: var(--clr-black);
     margin: 5px;
+}
+
+.card-body {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    
 }
 
 .cards{
