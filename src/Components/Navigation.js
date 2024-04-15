@@ -5,18 +5,12 @@ import './PokedexStyle.css';
 export const Navigation = () => {
     return (
         <div>
-            <ul class="nav justify-content-center">
+            <ul class="nav d-flex justify-content-center ">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="home">Pokemon</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="berries">Berries</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="items">Items</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="games">Games</a>
+                    <a class="nav-link" href="Items">Items</a>
                 </li>
             </ul>
             <Outlet></Outlet>

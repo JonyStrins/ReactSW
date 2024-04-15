@@ -6,7 +6,7 @@ import '../Components/PokedexStyle.css'
 
 const Pokemon = () => {
 
-    const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon')
+    const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=50&offset=0')
     const estado = UseFetch(url)
     const { cargando, data } = estado
 

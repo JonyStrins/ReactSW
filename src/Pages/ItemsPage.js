@@ -1,9 +1,9 @@
 import React from "react";
 
-export const BerriesPage = () => {
+export const ItemsPage = () => {
     return(
         <div>
-            Berries Page
+            Items Page
         </div>
     )
 }

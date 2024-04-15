@@ -1,5 +1,10 @@
 import React from "react";
 
+
 export const Pokemon = () => {
-    return <></>
+
+    return (
+        <div>
+        </div>
+    )
 }
