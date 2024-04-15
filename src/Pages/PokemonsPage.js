@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { UseFetch } from "../Components/UseFetch";
 import { Cards } from "../Components/Cards";
+import { Header } from "../Components/Header"
+import '../Components/PokedexStyle.css'
 
 const Pokemon = () => {
 
@@ -11,20 +13,19 @@ const Pokemon = () => {
     return (
         <div>
             <div className="container d-flex justify-content-around align-items-center" >
+                <Header></Header>
                 <img
                     src='https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png'
                     alt='Logo Pokedex'
-                    width='250'
+                    width='350'
                 />
                 <form className="d-flex justify-content-around align-items-center">
-                    <div class="input-group flex-nowrap" style={{ width: 250 }}>
+                    <div class="input-group flex-nowrap" style={{ width: 500 }}>
                         <span class="input-group-text material-icons" id="addon-wrapping">
                             search
                         </span>
-                        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping" />
-
-
-                        <button className='btn btn-outline-secondary'>Buscar</button>
+                        <input className="search-bar" type="text" class="form-control" placeholder="Ex: Mewtwo" aria-label="Username" aria-describedby="addon-wrapping" />
+                        <button className='btn btn-outline-secondary' id="search-btn">Buscar</button>
                     </div>
                 </form>
             </div>

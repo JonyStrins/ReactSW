@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-black: #1c1c1c;
+    --clr-gray: #ececec;
+    --clr-white: #f7f7f7;
+    --clr-red: #dc0a0a;
+    --clr-red2: #da0a2b;
+    --clr-blue: #2b2bff;
+    --clr-yellow: #f0d632;
+    --clr-green: #56ae56;
+}
+
+.nav-link {
+    color: var(--clr-yellow);
+    display: block;
+    flex-direction: row;
+    border: #1c1c1c;
+    border-radius: 10%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--clr-red2);
+}
+
+.nav {
+    width: 265px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 1000px;
+}
+
+.btn-header {
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    transition: .2s;
+}
+
+#big_button {
+    height: 151px;
+    width: 151px;
+    background-color: var(--clr-blue);
+    border: 10px solid var(--clr-gray);
+}
+
+#red_button {
+    height: 10px;
+    width: 10px;
+    background-color: var(--clr-red2);
+    border: 3px solid var(--clr-black);
+}
+
+#yell_button {
+    height: 10px;
+    width: 10px;
+    background-color: var(--clr-yellow);
+    border: 3px solid var(--clr-black);
+}
+
+#green_button {
+    height: 10px;
+    width: 10px;
+    background-color: var(--clr-green);
+    border: 3px solid var(--clr-black);
+}
+
+.btn-header:hover {
+    transform: scale(1.001);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+}
+
+input[type=text] {
+    background-color: var(--clr-green);
+    color: var(--clr-yellow);
+    text-decoration-color: var(--clr-yellow);
+}
+
+#search-btn {
+    background-color: var(--clr-yellow);
+    color: var(--clr-black);
+}
