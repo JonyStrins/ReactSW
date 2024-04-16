@@ -4,7 +4,7 @@ import { Cards } from "../Components/Cards";
 import { Header } from "../Components/Header"
 import '../Components/PokedexStyle.css'
 
-const Pokemon = () => {
+const PokemonList = () => {
 
     const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=50&offset=0')
     const estado = UseFetch(url)
@@ -48,4 +48,4 @@ const Pokemon = () => {
     )
 }
 
-export default Pokemon
+export default PokemonList
