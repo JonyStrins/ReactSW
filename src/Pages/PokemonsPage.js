@@ -3,12 +3,24 @@ import { UseFetch } from "../Components/UseFetch";
 import { Cards } from "../Components/Cards";
 import { Header } from "../Components/Header"
 import '../Components/PokedexStyle.css'
+import { useNavigate } from "react-router-dom";
 
 const Pokemon = () => {
 
     const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=50&offset=0')
     const estado = UseFetch(url)
     const { cargando, data } = estado
+
+    const [valueSearch, setValueSearch] = useState()
+    const navigate = useNavigate()
+
+    const onSearchSubmit = (e) =>{
+        e.preventDefault()
+
+        navigate('/search', {state: valueSearch.toLowerCase()})
+
+    }
+    
 
     return (
         <div>
@@ -19,12 +31,18 @@ const Pokemon = () => {
                     alt='Logo Pokedex'
                     width='350'
                 />
-                <form className="d-flex justify-content-around align-items-center">
+                <form className="d-flex justify-content-around align-items-center" onSubmit={onSearchSubmit}>
                     <div class="input-group flex-nowrap" style={{ width: 500 }}>
                         <span class="input-group-text material-icons" id="addon-wrapping">
                             search
                         </span>
-                        <input className="search-bar" type="text" class="form-control" placeholder="Ex: Mewtwo" aria-label="Username" aria-describedby="addon-wrapping" />
+                        <input className="search-bar" type="text" class="form-control"
+                            placeholder="Ex: Mewtwo" aria-label="Username" aria-describedby="addon-wrapping"
+                            value={valueSearch}
+                            onChange={ e => {
+                                setValueSearch(e.target.value)
+                            }}
+                        />
                         <button className='btn btn-outline-secondary' id="search-btn">Buscar</button>
                     </div>
                 </form>

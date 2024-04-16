@@ -13,8 +13,6 @@ export const Pokemon = () => {
     const estado = UseFetch(url)
     const { cargando, data } = estado
 
-    console.log(url)
-
     return (
         <div>
             {
