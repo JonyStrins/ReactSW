@@ -7,7 +7,7 @@ export const Navigation = () => {
         <div>
             <ul class="nav d-flex justify-content-center ">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Pokemon</a>
+                    <a class="nav-link active" aria-current="page" href="/">Pokemon</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Items">Items</a>
